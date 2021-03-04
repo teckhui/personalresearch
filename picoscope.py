@@ -75,5 +75,5 @@ for n in range(0, len(frequencySpace)):
 head = "frequency (Hz), ChA Voltage, ChB Voltage, Impedance"
 np.savetxt("results.csv", np.transpose([frequencySpace,channelAVoltage,channelBVoltage,impedance]), delimiter=",", header=head)
 
-# plt.plot(frequencySpace,impedance)
-# plt.show()
+plt.plot(frequencySpace,impedance)
+plt.show()
