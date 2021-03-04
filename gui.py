@@ -11,7 +11,6 @@ os.system('pyuic5 picoscope_ui.ui > picoscope_ui.py')
 sleep(2)
 
 
-
 def start():
     startFrequency = ui.startFrequency_input.text()
     startFrequency = float(startFrequency)
@@ -38,6 +37,7 @@ def start():
 
     # ui.matplotlibwidget.axes.plot(frequencySpace,impedance)
     # ui.matplotlibwidget.draw()
+
 
 app = QtWidgets.QApplication(sys.argv)
 window = QtWidgets.QMainWindow()
