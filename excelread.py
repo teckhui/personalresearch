@@ -1,3 +1,4 @@
+# Using csv_reader to read and write/process data
 import os
 import csv
 
@@ -23,7 +24,7 @@ with open ('experiments.csv') as csv_file:
     list_x = []
     for row in csv_reader:
         while True:
-            try:
+            try: #mathematical calculations
                 input_t1 = float(row['Average1'])
                 input_t2 = float(row['Average2'])
         
